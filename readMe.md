@@ -40,6 +40,9 @@ If you are using Rtools45, MuPDF is typically located at:
 
 ### Code for installation 
 
+Here is an example of how you can install MuPDF on Windows with a R code : 
+
+```
 run_cmd <- function(cmd, args = character(), error_msg = NULL, echo = TRUE) {
   if (echo) {
     message(">> ", paste(c(cmd, args), collapse = " "))
@@ -231,9 +234,13 @@ install_mupdf <- function(...) {
 }
 
 install_mupdf(rtools_root = "C:/rtools45", repo = "ucrt64")
+```
 
 ## Example
 
+Here is an example of how the R package can be used : 
+
+```
 library(rmupdf)
 
 doc <- pdf_open_mupdf("D:/pdf_highlight.pdf")
@@ -244,7 +251,7 @@ pdf_get_metadata_mupdf(doc)
 
 pdf_set_metadata_mupdf(
   doc,
-  title = "Nouveau titre",
+  title = "New Title",
   author = "Emmanauel"
 )
 
@@ -263,6 +270,7 @@ pdf_add_highlight_mupdf(
   g = 1,
   b = 0
 )
+```
 
 pdf_save_mupdf(doc, "D:/pdf_highlight_Mod.pdf")
 pdf_close_mupdf(doc)
