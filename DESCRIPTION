@@ -1,0 +1,15 @@
+Package: rmupdf
+Type: Package
+Title: Rcpp Bindings for MuPDF
+Version: 0.1.0
+Authors@R: person(given = "Emmanuel", family = "Hamel", role = c("aut", "cre"), email = "manu.hamel@gmial.com")
+Description: Minimal Rcpp bindings to MuPDF for opening, inspecting, annotating, and saving PDF documents.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+    Rcpp
+LinkingTo:
+    Rcpp
+SystemRequirements: MuPDF library and headers
+RoxygenNote: 7.3.3

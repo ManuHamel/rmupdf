@@ -1,0 +1,11 @@
+useDynLib(rmupdf, .registration = TRUE)
+importFrom(Rcpp, evalCpp)
+
+export(pdf_open_mupdf)
+export(pdf_close_mupdf)
+export(pdf_pages_mupdf)
+export(pdf_get_metadata_mupdf)
+export(pdf_set_metadata_mupdf)
+export(pdf_list_annots_mupdf)
+export(pdf_add_highlight_mupdf)
+export(pdf_save_mupdf)
