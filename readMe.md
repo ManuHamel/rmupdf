@@ -270,7 +270,7 @@ pdf_add_highlight_mupdf(
   g = 1,
   b = 0
 )
-```
 
 pdf_save_mupdf(doc, "D:/pdf_highlight_Mod.pdf")
 pdf_close_mupdf(doc)
+```
