@@ -36,7 +36,7 @@ You need:
 
 ### MuPDF configuration (Windows)
 
-If you are using Rtools45, MuPDF is typically located at:
+If you are using Rtools45, MuPDF is typically located at: C:/rtools45
 
 ### Code for installation 
 
